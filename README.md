@@ -3,7 +3,7 @@
 1. Cài đặt openvpn as như bình thường
 2. Sau khi cài đặt thực hiện các lênh sau để crack:
 
-
+```console
 cd /usr/local/openvpn_as/lib/python
 mkdir unlock_license
 mv pyovpn-2.0-py3.6.egg pyovpn-2.0-py3.6.egg_bak
@@ -35,4 +35,5 @@ cd /usr/local/openvpn_as/lib/python
 rm -rf __pycache__/*
 cd /usr/local/openvpn_as/bin
 ./ovpn-init
--> Thực hiện cấu hình lại, c
+-> Thực hiện cấu hình lạ
+```
