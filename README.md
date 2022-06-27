@@ -13,7 +13,9 @@ unzip pyovpn-2.0-py3.6.zip
 cd pyovpn/lic/
 pip3 install uncompyle6
 uncompyle6 uprop.pyc > uprop.py
+```
 Mở file uprop.py và thêm dòng sau: ret['concurrent_connections'] = 2048 vào trước lệnh return: 
+```console
         apc = self._apc()
             v_agg += apc
             if ret == None:
@@ -24,6 +26,9 @@ Mở file uprop.py và thêm dòng sau: ret['concurrent_connections'] = 2048 và
                 print("ret['%s'] = v_agg(%d) + v_nonagg(%d)" % (prop, v_agg, v_nonagg))
      -->    ret['concurrent_connections'] = 2048
         return ret
+```
+Tiếp tục gõ c
+```console
 rm -f uprop.pyc
 python3 -O -m compileall uprop.py && mv __pycache__/uprop.cpython-36.opt-1.pyc uprop.pyc
 rm -rf __pycache__ uprop.py
