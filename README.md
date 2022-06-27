@@ -41,5 +41,5 @@ cd /usr/local/openvpn_as/lib/python
 rm -rf __pycache__/*
 cd /usr/local/openvpn_as/bin
 ./ovpn-init
--> Thực hiện cấu hình lạ
 ```
+-> Thực hiện cấu hình lại từ đầu => DONE   
