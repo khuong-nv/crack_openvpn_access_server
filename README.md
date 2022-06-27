@@ -27,7 +27,8 @@ Mở file uprop.py và thêm dòng sau: ret['concurrent_connections'] = 2048 và
      -->    ret['concurrent_connections'] = 2048
         return ret
 ```
-Tiếp tục gõ c
+Tiếp tục chạy các lệnh sau:
+
 ```console
 rm -f uprop.pyc
 python3 -O -m compileall uprop.py && mv __pycache__/uprop.cpython-36.opt-1.pyc uprop.pyc
